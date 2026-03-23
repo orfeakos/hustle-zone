@@ -27,10 +27,10 @@ export default function Home() {
             <UserButton afterSignOutUrl="/" />
           ) : (
             <>
-              <SignInButton mode="modal">
+              <SignInButton mode="modal" forceRedirectUrl="/onboarding">
                 <button style={{fontFamily:'Impact,sans-serif',fontSize:'1rem',letterSpacing:'2px',padding:'8px 22px',borderRadius:'999px',border:'2.5px solid #FFE000',background:'transparent',color:'#FFE000',cursor:'pointer'}}>LOGIN</button>
               </SignInButton>
-              <SignInButton mode="modal">
+              <SignInButton mode="modal" forceRedirectUrl="/onboarding">
                 <button style={{fontFamily:'Impact,sans-serif',fontSize:'1rem',letterSpacing:'2px',padding:'8px 22px',borderRadius:'999px',border:'2.5px solid #FFE000',background:'#FFE000',color:'#111',cursor:'pointer',boxShadow:'3px 3px 0 #FF2D2D'}}>JOIN FREE ⚡</button>
               </SignInButton>
             </>
@@ -58,7 +58,7 @@ export default function Home() {
         <div style={{display:'flex',flexDirection:'column',gap:'12px',alignItems:'center',width:'100%',maxWidth:'360px',position:'relative',zIndex:2}}>
           <a href="#categories" style={{background:'#FF2D2D',color:'#fff',border:'3px solid #111',borderRadius:'999px',padding:'14px 40px',fontFamily:'Impact,sans-serif',fontSize:'1.35rem',letterSpacing:'2px',textDecoration:'none',boxShadow:'5px 5px 0 #111',display:'block',width:'100%',textAlign:'center',boxSizing:'border-box'}}>FIND YOUR HUSTLE 🔥</a>
           {!isSignedIn && (
-            <SignInButton mode="modal">
+            <SignInButton mode="modal" forceRedirectUrl="/onboarding">
               <button style={{background:'#111',color:'#FFE000',border:'3px solid #111',borderRadius:'999px',padding:'14px 40px',fontFamily:'Impact,sans-serif',fontSize:'1.35rem',letterSpacing:'2px',cursor:'pointer',boxShadow:'5px 5px 0 #FFB800',width:'100%'}}>JOIN FREE ⚡</button>
             </SignInButton>
           )}
@@ -107,7 +107,7 @@ export default function Home() {
                 {isSignedIn ? (
                   <Link href={`/chat/${cat.key}`} style={{fontFamily:'Impact,sans-serif',fontSize:'.92rem',letterSpacing:'1.5px',padding:'6px 16px',borderRadius:'999px',border:'2.5px solid #111',background:'#FFE000',color:'#111',boxShadow:'3px 3px 0 #111',textDecoration:'none'}}>ENTER CHAT →</Link>
                 ) : (
-                  <SignInButton mode="modal">
+                  <SignInButton mode="modal" forceRedirectUrl="/onboarding">
                     <button style={{fontFamily:'Impact,sans-serif',fontSize:'.92rem',letterSpacing:'1.5px',padding:'6px 16px',borderRadius:'999px',border:'2.5px solid #111',background:'#FFE000',color:'#111',cursor:'pointer',boxShadow:'3px 3px 0 #111'}}>JOIN TO CHAT →</button>
                   </SignInButton>
                 )}
