@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         <div style={{display:'flex',flexDirection:'column',gap:'12px',alignItems:'center',width:'100%',maxWidth:'360px',position:'relative',zIndex:2}}>
-          <a href="#categories" style={{background:'#FF2D2D',color:'#fff',border:'3px solid #111',borderRadius:'999px',padding:'14px 40px',fontFamily:'Impact,sans-serif',fontSize:'1.35rem',letterSpacing:'2px',textDecoration:'none',boxShadow:'5px 5px 0 #111',display:'block',width:'100%',textAlign:'center',boxSizing:'border-box'}}>FIND YOUR HUSTLE 🔥</a>
+          <a href="#categories" style={{background:'#0066FF',color:'#fff',border:'3px solid #111',borderRadius:'999px',padding:'14px 40px',fontFamily:'Impact,sans-serif',fontSize:'1.35rem',letterSpacing:'2px',textDecoration:'none',boxShadow:'5px 5px 0 #111',display:'block',width:'100%',textAlign:'center',boxSizing:'border-box'}}>FIND YOUR HUSTLE 🔥</a>
           {!isSignedIn && (
             <SignInButton mode="modal" forceRedirectUrl="/onboarding">
               <button style={{background:'#111',color:'#FFE000',border:'3px solid #111',borderRadius:'999px',padding:'14px 40px',fontFamily:'Impact,sans-serif',fontSize:'1.35rem',letterSpacing:'2px',cursor:'pointer',boxShadow:'5px 5px 0 #FFB800',width:'100%'}}>JOIN FREE ⚡</button>
