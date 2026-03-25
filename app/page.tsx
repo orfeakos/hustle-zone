@@ -17,7 +17,7 @@ export default function Home() {
   const { isSignedIn } = useUser()
 
   return (
-    <main style={{background:'#FFE000',minHeight:'100vh',fontFamily:'sans-serif'}}>
+    <main style={{background:'#FFE000',minHeight:'100vh',fontFamily:'sans-serif',overflow:'hidden'}}>
 
       {/* NAV */}
       <nav style={{display:'flex',alignItems:'center',justifyContent:'space-between',padding:'14px 24px',background:'#111',borderBottom:'4px solid #FFE000',position:'sticky',top:0,zIndex:200}}>
