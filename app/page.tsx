@@ -88,7 +88,7 @@ export default function Home() {
       <section id="categories" style={{background:'#FFE000',padding:'70px 20px',position:'relative'}}>
         <div style={{position:'absolute',inset:0,backgroundImage:'radial-gradient(circle,rgba(0,0,0,0.07) 2px,transparent 2px)',backgroundSize:'22px 22px',pointerEvents:'none'}}/>
         <div style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'14px',marginBottom:'32px'}}>
-          <h2 style={{fontFamily:'Impact,sans-serif',fontSize:'2.8rem',letterSpacing:'3px',color:'#111',textShadow:'3px 3px 0 #FF2D2D',whiteSpace:'nowrap'}}>PICK YOUR HUSTLE</h2>
+          <h2 style={{fontFamily:'Impact,sans-serif',fontSize:'2rem',letterSpacing:'3px',color:'#111',textShadow:'3px 3px 0 #FF2D2D',whiteSpace:'nowrap'}}>PICK YOUR HUSTLE</h2>
         </div>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))',gap:'18px',position:'relative',zIndex:1}}>
           {CATS.map((cat, i) => (
