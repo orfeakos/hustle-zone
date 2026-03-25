@@ -65,7 +65,7 @@ export default function Home() {
         </div>
 
         <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'12px',marginTop:'40px',width:'100%',maxWidth:'360px',position:'relative',zIndex:2}}>
-          {[['47K+','MEMBERS'],['8','CATEGORIES'],['$0','TO JOIN'],['24/7','LIVE CHATS']].map(([n,l]) => (
+          {[['47K+','MEMBERS'],['8','CATEGORIES'],['$0','TO JOIN'],['24/6-7','LIVE CHATS']].map(([n,l]) => (
             <div key={l} style={{background:'#111',border:'3px solid #111',borderRadius:'18px',padding:'16px 12px',textAlign:'center',boxShadow:'4px 4px 0 #FFB800'}}>
               <div style={{fontFamily:'Impact,sans-serif',fontSize:'2.2rem',letterSpacing:'2px',color:'#FFE000',lineHeight:1}}>{n}</div>
               <div style={{fontSize:'.65rem',letterSpacing:'1px',color:'rgba(255,254,240,.5)',fontFamily:'monospace',marginTop:'3px'}}>{l}</div>
